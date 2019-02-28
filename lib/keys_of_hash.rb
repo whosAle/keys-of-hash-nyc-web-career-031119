@@ -1,5 +1,6 @@
 class Hash
   def keys_of(arguments)
-    # code goes here
+    result = []
+    self.select { |k,v| result << k if v == arguments }
   end
 end
